@@ -13,5 +13,9 @@
     "Desing"
   ],
   "author": "John Zúñiga",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
 }
