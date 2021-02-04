@@ -439,6 +439,7 @@ h3 {
     font-weight: 700; }
   .contenido-festival .texto {
     line-height: 1.5; }
+<<<<<<< HEAD
 
 .lineup {
   background-color: #f53756;
@@ -537,3 +538,5 @@ h3 {
   border-radius: 50%; }
   .btn-cerrar:hover {
     cursor: pointer; }
+=======
+>>>>>>> 5to commit, sección sobre el festival agregada y optimizando imágenes con Gulp

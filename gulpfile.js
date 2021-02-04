@@ -4,10 +4,13 @@
 const { series, src, dest, watch } = require("gulp");
 const sass = require("gulp-sass");
 const imagemin = require("gulp-imagemin");
+<<<<<<< HEAD
 const notify = require("gulp-notify");
 const webp = require("gulp-webp");
 const concat = require("gulp-concat");
 
+=======
+>>>>>>> 5to commit, sección sobre el festival agregada y optimizando imágenes con Gulp
 
 const paths = {
   imagenes: "./src/img/**/*",
@@ -29,6 +32,7 @@ function minificarcss() {
     .pipe(dest("./build/css"));
 }
 
+<<<<<<< HEAD
 function javascript(){
   return src(paths.js)
     .pipe(concat("bundle.js"))
@@ -47,6 +51,12 @@ function versionWebp(){
     .pipe(webp())
     .pipe(dest("./build/img"))
     .pipe(notify({message: "Imágenes versión Webp"}));
+=======
+function imagenes() {
+  return src("./src/img/**/*")
+    .pipe(imagemin())
+    .pipe(dest("./build/img"))
+>>>>>>> 5to commit, sección sobre el festival agregada y optimizando imágenes con Gulp
 }
 
 // Watch estará constantemente escuchando los cambios en el código, en este caso, los cambios realizados en el archivo "app.scss", y por cada cambio en el código aplicará la función css, el cual compilará de SASS a CSS legible
