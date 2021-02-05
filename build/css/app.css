@@ -440,6 +440,9 @@ h3 {
   .contenido-festival .texto {
     line-height: 1.5; }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6to commit, sección de Line Up ok
 
 .lineup {
   background-color: #f53756;
@@ -494,6 +497,7 @@ h3 {
 
 .bg-amarillo .calendario li:nth-child(odd) {
   background-color: #fef03a; }
+<<<<<<< HEAD
 
 .galeria {
   padding: 5rem 0; }
@@ -540,3 +544,5 @@ h3 {
     cursor: pointer; }
 =======
 >>>>>>> 5to commit, sección sobre el festival agregada y optimizando imágenes con Gulp
+=======
+>>>>>>> 6to commit, sección de Line Up ok

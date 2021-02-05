@@ -24,7 +24,13 @@
     "gulp-webp": "^4.0.1"
 =======
     "gulp-imagemin": "^7.1.0",
+<<<<<<< HEAD
     "gulp-sass": "^4.1.0"
 >>>>>>> 5to commit, sección sobre el festival agregada y optimizando imágenes con Gulp
+=======
+    "gulp-notify": "^3.2.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-webp": "^4.0.1"
+>>>>>>> 6to commit, sección de Line Up ok
   }
 }
