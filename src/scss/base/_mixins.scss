@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7to commit, sección de galería ok
 @mixin telefono {
   @media (min-width: $telefono){
     @content;
@@ -21,6 +24,7 @@
   display: grid;
   grid-template-columns: repeat($columnas, 1fr);
   gap: $espaciado;
+<<<<<<< HEAD
 =======
 @mixin telefono {
   @media (min-width: $telefono){
@@ -45,4 +49,6 @@
   grid-template-columns: repeat($columnas, 1fr);
   gap: $espaciado;
 >>>>>>> 5to commit, sección sobre el festival agregada y optimizando imágenes con Gulp
+=======
+>>>>>>> 7to commit, sección de galería ok
 }

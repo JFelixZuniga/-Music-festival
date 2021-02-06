@@ -498,6 +498,9 @@ h3 {
 .bg-amarillo .calendario li:nth-child(odd) {
   background-color: #fef03a; }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7to commit, sección de galería ok
 
 .galeria {
   padding: 5rem 0; }
@@ -524,6 +527,7 @@ h3 {
 
 .overlay {
   position: fixed;
+<<<<<<< HEAD
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
@@ -546,3 +550,9 @@ h3 {
 >>>>>>> 5to commit, sección sobre el festival agregada y optimizando imágenes con Gulp
 =======
 >>>>>>> 6to commit, sección de Line Up ok
+=======
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  top: 0; }
+>>>>>>> 7to commit, sección de galería ok

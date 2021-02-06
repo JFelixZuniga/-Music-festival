@@ -22,9 +22,13 @@ const paths = {
   imagenes: "./src/img/**/*",
   scss: "./src/scss/**/*.scss",
 <<<<<<< HEAD
+<<<<<<< HEAD
   js: "./src/js/**/*.js"
 =======
 >>>>>>> 6to commit, sección de Line Up ok
+=======
+  js: "./src/js/**/*.js"
+>>>>>>> 7to commit, sección de galería ok
 }
 // Función que complila SASS
 function css() {
@@ -42,12 +46,16 @@ function minificarcss() {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7to commit, sección de galería ok
 function javascript(){
   return src(paths.js)
     .pipe(concat("bundle.js"))
     .pipe(dest("./build/js"))
 }
 
+<<<<<<< HEAD
 function imagenes() {
   return src(paths.imagenes)
     .pipe(imagemin())
@@ -61,6 +69,8 @@ function versionWebp(){
     .pipe(dest("./build/img"))
     .pipe(notify({message: "Imágenes versión Webp"}));
 =======
+=======
+>>>>>>> 7to commit, sección de galería ok
 function imagenes() {
   return src(paths.imagenes)
     .pipe(imagemin())
@@ -83,9 +93,13 @@ function versionWebp(){
 function watchArchivos() {
   watch(paths.scss, css);
 <<<<<<< HEAD
+<<<<<<< HEAD
   watch(paths.js, javascript);
 =======
 >>>>>>> 6to commit, sección de Line Up ok
+=======
+  watch(paths.js, javascript);
+>>>>>>> 7to commit, sección de galería ok
 }
 
 exports.css = css;
@@ -94,7 +108,11 @@ exports.imagenes = imagenes;
 exports.watchArchivos = watchArchivos;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 exports.default = series(css, javascript, imagenes, versionWebp, watchArchivos);
 =======
 exports.default = series(css, imagenes, versionWebp, watchArchivos);
 >>>>>>> 6to commit, sección de Line Up ok
+=======
+exports.default = series(css, javascript, imagenes, versionWebp, watchArchivos);
+>>>>>>> 7to commit, sección de galería ok
