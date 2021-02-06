@@ -316,6 +316,8 @@ html {
 body {
   font-family: "MuseoModerno", cursive;
   font-size: 1.6rem; }
+  body.fijar-body {
+    overflow: hidden; }
 
 p {
   font-size: 2rem;
@@ -332,7 +334,9 @@ a {
 img {
   max-width: 100%; }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0; }
 
 h1 {
@@ -515,7 +519,21 @@ h3 {
 
 .overlay {
   position: fixed;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
-  top: 0; }
+  top: 0;
+  display: grid;
+  place-items: center; }
+
+.btn-cerrar {
+  width: 5rem;
+  height: 5rem;
+  background-color: #fff;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  font-size: 3rem;
+  border-radius: 50%; }
+  .btn-cerrar:hover {
+    cursor: pointer; }
