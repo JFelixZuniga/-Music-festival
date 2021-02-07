@@ -1,55 +1,33 @@
 document.addEventListener("DOMContentLoaded", function () {
-  crearGaleria();
+  scrollNav();
+
+  navegacionFija();
 });
 
-function crearGaleria() {
-  const galeria = document.querySelector(".galeria-imagenes");
+function navegacionFija() {
+  const navbar = document.querySelector(".header");
+  // Register Intersection Observer
+  const observer = new IntersectionObserver((entries) =>
+    entries[0].isIntersecting
+      ? navbar.classList.remove("fijo")
+      : navbar.classList.add("fijo")
+  );
 
-  for (let i = 1; i <= 12; i++) {
-    const imagen = document.createElement("img");
-    imagen.src = `./build/img/thumb/${i}.webp`;
-
-    imagen.dataset.imagenId = i;
-
-    // Añadir la función de motrarImagen
-    imagen.onclick = mostrarImagen;
-
-    const lista = document.createElement("li");
-    lista.appendChild(imagen);
-    galeria.appendChild(lista);
-  }
+  // Observed element
+  observer.observe(document.querySelector(".video"));
 }
 
-function mostrarImagen(e) {
-  const id = parseInt(e.target.dataset.imagenId);
+function scrollNav() {
+  const enlaces = document.querySelectorAll(".navegacion-principal a");
 
-  const imagen = document.createElement("img");
-  imagen.src = `./build/img/grande/${id}.webp`;
+  enlaces.forEach(function (enlace) {
+    enlace.addEventListener("click", function (e) {
+      e.preventDefault();
+      const seccion = document.querySelector(e.target.attributes.href.value);
 
-  const overlay = document.createElement("div");
-  overlay.appendChild(imagen);
-  overlay.classList.add("overlay");
-
-  overlay.onclick = function () {
-    overlay.remove();
-    body.classList.remove("fijar-body");
-  };
-
-  // Botón para cerrar la imagen
-  const cerrarImagen = document.createElement("p");
-  cerrarImagen.textContent = "X";
-  cerrarImagen.classList.add("btn-cerrar");
-
-  overlay.appendChild(cerrarImagen);
-
-  // Cerrar el overlay al hacer click en la X
-  cerrarImagen.onclick = function () {
-    overlay.remove();
-    body.classList.remove("fijar-body");
-  };
-
-  // Mostrar en el Html
-  const body = document.querySelector("body");
-  body.appendChild(overlay);
-  body.classList.add("fijar-body");
+      seccion.scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+  });
 }

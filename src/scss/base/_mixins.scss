@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> 055303250a1b11e80dbdba56c526b07788fd7d0d
 @mixin telefono {
   @media (min-width: $telefono){
     @content;
@@ -18,7 +14,6 @@
   @media (min-width: $desktop){
     @content;
   }
-<<<<<<< HEAD
 }
 
 @mixin grid($columnas, $espaciado) {
@@ -49,6 +44,4 @@
   display: grid;
   grid-template-columns: repeat($columnas, 1fr);
   gap: $espaciado;
-=======
->>>>>>> 055303250a1b11e80dbdba56c526b07788fd7d0d
 }
