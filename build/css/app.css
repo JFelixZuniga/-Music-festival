@@ -316,8 +316,11 @@ html {
 body {
   font-family: "MuseoModerno", cursive;
   font-size: 1.6rem; }
+<<<<<<< HEAD
   body.fijar-body {
     overflow: hidden; }
+=======
+>>>>>>> 055303250a1b11e80dbdba56c526b07788fd7d0d
 
 p {
   font-size: 2rem;
@@ -334,11 +337,14 @@ a {
 img {
   max-width: 100%; }
 
+<<<<<<< HEAD
 h1,
 h2,
 h3 {
   margin: 0; }
 
+=======
+>>>>>>> 055303250a1b11e80dbdba56c526b07788fd7d0d
 h1 {
   font-size: 4rem;
   font-weight: 900; }
@@ -348,6 +354,7 @@ h2 {
 
 h3 {
   font-size: 3rem; }
+<<<<<<< HEAD
 
 .bg-amarillo {
   background-color: #fef46d; }
@@ -587,3 +594,5 @@ h3 {
   .footer p {
     color: #fff;
     margin: 0; }
+=======
+>>>>>>> 055303250a1b11e80dbdba56c526b07788fd7d0d
