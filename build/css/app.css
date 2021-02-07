@@ -349,11 +349,11 @@ h2 {
 h3 {
   font-size: 3rem; }
 
-.bg-verde {
-  background-color: #4cb8b3; }
-
 .bg-amarillo {
   background-color: #fef46d; }
+
+.bg-verde {
+  background-color: #4cb8b3; }
 
 .header {
   background-color: #4cb8b3; }
@@ -439,10 +439,6 @@ h3 {
     font-weight: 700; }
   .contenido-festival .texto {
     line-height: 1.5; }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 6to commit, sección de Line Up ok
 
 .lineup {
   background-color: #f53756;
@@ -497,10 +493,6 @@ h3 {
 
 .bg-amarillo .calendario li:nth-child(odd) {
   background-color: #fef03a; }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 7to commit, sección de galería ok
 
 .galeria {
   padding: 5rem 0; }
@@ -527,7 +519,6 @@ h3 {
 
 .overlay {
   position: fixed;
-<<<<<<< HEAD
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
@@ -546,13 +537,53 @@ h3 {
   border-radius: 50%; }
   .btn-cerrar:hover {
     cursor: pointer; }
-=======
->>>>>>> 5to commit, sección sobre el festival agregada y optimizando imágenes con Gulp
-=======
->>>>>>> 6to commit, sección de Line Up ok
-=======
-  background-color: #000;
+
+.boletos {
+  padding: 5rem 0; }
+  .boletos h3 {
+    text-align: center;
+    color: #fff; }
+  .boletos .contenedor-boletos {
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem; }
+  .boletos .plan p {
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem; }
+
+.pase {
   width: 100%;
-  height: 100%;
-  top: 0; }
->>>>>>> 7to commit, sección de galería ok
+  border-spacing: 0; }
+  .pase thead {
+    background-color: #f53756; }
+    .pase thead th {
+      padding: 1.25rem;
+      font-weight: 300;
+      font-size: 2rem;
+      color: #fff;
+      text-transform: uppercase; }
+  .pase tbody {
+    background-color: #fff; }
+    .pase tbody td {
+      padding: 1.25rem;
+      border-bottom: 1px solid #e1e1e1; }
+    .pase tbody tr:last-of-type td {
+      border: none; }
+  .pase tfoot {
+    background-color: #752f97; }
+    .pase tfoot td {
+      padding: 1.25rem;
+      text-align: center;
+      font-size: 3rem;
+      color: #fff; }
+
+.footer {
+  background-color: #f53756;
+  padding: 1.25rem;
+  text-align: center; }
+  .footer p {
+    color: #fff;
+    margin: 0; }

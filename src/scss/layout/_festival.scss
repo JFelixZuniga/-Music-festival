@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 7to commit, sección de galería ok
 .sobre-festival {
   padding: $separacion 0;
 
@@ -17,38 +13,11 @@
   h2 {
     font-size: 3rem;
   }
-  .fecha{
+  .fecha {
     color: $rosa;
     font-weight: $bold;
   }
   .texto {
     line-height: 1.5;
   }
-<<<<<<< HEAD
-=======
-.sobre-festival {
-  padding: $separacion 0;
-
-  @include tablet {
-    @include grid(2, $separacion);
-  }
-}
-
-.contenido-festival {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  h2 {
-    font-size: 3rem;
-  }
-  .fecha{
-    color: $rosa;
-    font-weight: $bold;
-  }
-  .texto {
-    line-height: 1.5;
-  }
->>>>>>> 5to commit, sección sobre el festival agregada y optimizando imágenes con Gulp
-=======
->>>>>>> 7to commit, sección de galería ok
 }
